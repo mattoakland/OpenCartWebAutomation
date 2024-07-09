@@ -6,6 +6,8 @@
 package testBase;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 
 public class DriverFactory {
 
@@ -32,7 +34,12 @@ public class DriverFactory {
 	public void setDriver(WebDriver driverParm) {
 		driver.set(driverParm);
 	}
-	
+
+	// Method to get WebDriverWait instance
+	public WebDriverWait getWait() {
+		// You can configure the timeout duration as per your needs
+		return new WebDriverWait(getDriver(), 5);
+	}
 	
 	public void closeBrowser() {
 		driver.get().quit();

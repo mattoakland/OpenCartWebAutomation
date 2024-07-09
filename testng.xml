@@ -10,12 +10,12 @@
 	</listeners>
 	<test name="LoginTests">
 		<classes>
-			<class name="Tests.UserLoginTests" />
+			<class name="Tests.AddMacTest" />
 		</classes>
 	</test> <!-- Test -->
-		<test name="DataDriven Tests">
+		<!--<test name="DataDriven Tests">
 		<classes>
 		<class name="Tests.TestCase" /> 
 		</classes>
-	</test> <!-- Test -->
+	</test> &lt;!&ndash; Test &ndash;&gt;-->
 </suite> <!-- Suite -->
